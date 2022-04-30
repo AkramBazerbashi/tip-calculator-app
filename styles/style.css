@@ -1,0 +1,96 @@
+@media (min-width: 768px) {
+  .first {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+  .second {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+  }
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  background-color: #c5e4e7;
+}
+
+body > h2 {
+  text-align: center;
+}
+
+.first {
+  border-radius: 20px;
+}
+
+input, output {
+  border: none;
+  outline: none;
+  border-radius: 2px;
+}
+
+input[type='text'], input[value='Custom'] {
+  background-color: #c5e4e7 !important;
+}
+
+.bill form div input {
+  border: none;
+  text-align: right;
+}
+
+.bill form div span {
+  background-color: #c5e4e7 !important;
+}
+
+.tip .row div input {
+  background-color: #00494d;
+}
+
+.tip .row div input:hover {
+  background-color: #26C2AD !important;
+}
+
+.second .text span {
+  color: #5e7a7d !important;
+}
+
+.second .container {
+  background-color: #00494d !important;
+  border-radius: 10px;
+}
+
+.second input[type="reset"] {
+  background-color: #26C2AD;
+}
+
+.second input[type="reset"]:hover {
+  background-color: #c5e4e7;
+}
+
+.second output {
+  color: #26C2AD !important;
+}
+
+.numberOfPeople div input {
+  border: none;
+  text-align: right;
+}
+
+.numberOfPeople div span {
+  background-color: #c5e4e7 !important;
+}
+
+#emailHelp {
+  top: -30px !important;
+  right: 0;
+}
+
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none !important;
+}
+/*# sourceMappingURL=style.css.map */

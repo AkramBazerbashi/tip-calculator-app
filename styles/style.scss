@@ -1,0 +1,107 @@
+@import 'media';
+
+$color1: hsl(183, 100%, 15%);
+$color2: hsl(186, 14%, 43%);
+$color3: hsl(184, 14%, 56%);
+$color4: hsl(185, 41%, 84%);
+$color5: hsl(189, 41%, 97%);
+$color6: hsl(0, 0%, 100%);
+
+
+body {
+    font-family: 'Space Mono', monospace;
+    background-color: $color4;
+
+    >h2 {
+        text-align: center;
+    }
+}
+
+.first {
+    border-radius: 20px;
+}
+
+input, output {
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+
+input[type='text'], input[value= 'Custom'] {
+    background-color: $color4 !important;
+}
+
+.bill{
+    form {
+        div {
+            input {
+                border: none;
+                text-align: right;
+            }
+            span{
+                background-color: $color4 !important;
+            }
+        }
+    }
+}
+
+.tip {
+    .row{
+        div {
+            input{
+                background-color: $color1;
+            }
+            input:hover{
+                background-color: #26C2AD !important;
+            }
+        }
+    }
+}
+
+.second {
+
+    .text{
+        span {
+            color: $color2 !important;
+        }
+    }
+    .container {
+        background-color: $color1 !important;
+        border-radius: 10px;
+    }
+
+    input[type="reset"]{
+        background-color: #26C2AD;
+    }
+    input[type="reset"]:hover{
+        background-color: $color4;
+    }
+    output {
+        color: #26C2AD !important;
+    }
+}
+
+.numberOfPeople{
+    div {
+        input {
+            border: none;
+            text-align: right;
+        }
+        span{
+            background-color: $color4 !important;
+        }
+    }
+}
+
+#emailHelp {
+    top:-30px !important;
+    right: 0;
+}
+
+.show{
+    display: block !important;
+}
+
+.hide{
+    display: none !important;
+}

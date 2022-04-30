@@ -1,44 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="styles/bootstrap/scss/bootstrap.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/fontAwesome/css/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <h2>SPLI</h2>
+  <h2>TTER</h2>
+  <div class="container">
+    <div class="row">
+      <div class="first col-12 col-md-6 bg-light p-5">
+        <div class="bill mb-4">
+          <h3 class="fs-6">Bill</h3>
+          <form action="" id="form">
+            <div class="input-group mb-3">
+              <span class="input-group-text " id="basic-addon1">$</span>
+              <input id="bill" type="text" class="form-control" placeholder="0" aria-describedby="basic-addon1">
+            </div>
+          </form>
+        </div>
+        <div class="tip mb-4">
+          <h3 class="fs-6">Select Tip %</h3>
+          <div class="row">
+            <div class="col-6 col-md-4">
+              <input form="form" id="t5" type="button" value="5%" class="w-100 mb-2 text-light">
+            </div>
+            <div class="col-6 col-md-4">
+              <input form="form" id="t10" type="button" value="10%" class="w-100 mb-2 text-light">
+            </div>
+            <div class="col-6 col-md-4">
+              <input form="form" id="t15" type="button" value="15%" class="w-100 mb-2 text-light">
+            </div>
+            <div class="col-6 col-md-4">
+              <input form="form" id="t25" type="button" value="25%" class="w-100 mb-2 text-light">
+            </div>
+            <div class="col-6 col-md-4">
+              <input form="form" id="t50" type="button" value="50%" class="w-100 mb-2 text-light">
+            </div>
+            <div class="col-6 col-md-4">
+              <input form="form" type="button" value="Custom" class="w-100 ">
+            </div>
+          </div>
+        </div>
+        <div class="numberOfPeople mb-4">
+          <h3 class="fs-6">Number of People</h3>
+          <div class="input-group mb-3 position-relative">
+            <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>
+            <input form="form" id="numPeo" type="text" class="form-control" placeholder="0"
+              aria-describedby="basic-addon1">
+            <div id="emailHelp" class="form-text text-danger position-absolute d-none">Can't be zero</div>
+          </div>
+        </div>
+      </div>
+      <div class="second col-12 col-md-6 bg-light p-5 pb-md-0 pt-0 d-flex align-items-center justify-content-center">
+        <div class="container p-3">
+          <div class="tipAmount mb-4  d-flex justify-content-between">
+            <div class="text">
+              <h3 class="text-light">Tip Amount</h3>
+              <span class="text-light">/ person</span>
+            </div>
+            <output form="form" id="o1" class="d-flex align-items-center justify-content-center fs-1">$0.00</output>
+          </div>
+          <div class="total mb-4 d-flex justify-content-between">
+            <div class="text">
+              <h3 class="text-light">Total</h3>
+              <span class="text-light">/ person</span>
+            </div>
+            <output form="form" id="o2" class="d-flex align-items-center justify-content-center fs-1">$0.00</output>
+          </div>
+          <input form="form" type="reset" value="Reset" class="w-100 mt-md-5">
+        </div>
+      </div>
+    </div>
   </div>
+  <script src="scripts/bootstrap.min.js"></script>
+  <script src="scripts/script.js"></script>
 </body>
+
 </html>
